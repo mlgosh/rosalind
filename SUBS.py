@@ -12,4 +12,5 @@ def motif_finder(dna, motif):
         motifs.append(find + 1 + (initial_length - new_length))
     return motifs
 
-print(*motif_finder("GATATATGCATATACTT", "ATAT"), sep = " ")
+if __name__ == "__main__":
+    print(*motif_finder("GATATATGCATATACTT", "ATAT"), sep = " ")
