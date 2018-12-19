@@ -1,4 +1,4 @@
-#Function that finds and records positions of a motif within a dna string
+# Function that finds and records positions of a motif within a dna string
 def motif_finder(dna, motif):
     motifs = []
     initial_length = len(dna)
