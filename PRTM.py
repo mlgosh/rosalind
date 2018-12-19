@@ -1,3 +1,4 @@
+#Dictionary containing amino acids with their atomic mass
 aa = {'A' : 71.03711,
       'R' : 156.10111,
       'N' : 114.04293,
