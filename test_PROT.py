@@ -21,3 +21,9 @@ def test_non_triplet_sequence():
     rna_in = "AUGUUCAA" # 8 bases in input
     with pytest.raises(AssertionError):
         PROT.rna_to_pro(rna_in)
+
+def test_non_base():
+    rna_in = "ANGUUCAAG"
+    with pytest.raises(Exception) as custom_error:
+        PROT.rna_to_pro(rna_in)
+    assert "non-base" in str(custom_error)
